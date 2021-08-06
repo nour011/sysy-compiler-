@@ -1,4 +1,3 @@
-
 #ifndef SSACODESTRUCT_HPP
 #define SSACODESTRUCT_HPP
 #include <vector>
@@ -107,7 +106,7 @@ SsaTac* createSsaTacFromTac(tac* code)
     return newCode;
 }
 
-SsaSymb* createSsaSymbFromSymb(symb* var)
+SsaSymb* createSsaSymbFromSymb(symb* var);
     SsaSymb* newSymb = new SsaSymb();
     newSymb->type = var->type;
     switch(var->type)
