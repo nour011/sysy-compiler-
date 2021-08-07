@@ -1,16 +1,3 @@
-//======================================================================
-//
-//        Copyright (C) 2021 张锦伦    
-//        All rights reserved
-//
-//        filename :basicBlock.hpp
-//        description :
-//
-//        created by 张锦伦 at  03/07/2021 16:02:31
-//        
-//
-//======================================================================
-
 #ifndef BASICBLOCK_HPP
 #define BASICBLOCK_HPP
 #include "frontEndInput.hpp"

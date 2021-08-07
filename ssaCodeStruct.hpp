@@ -105,27 +105,7 @@ SsaTac* createSsaTacFromTac(tac* code)
     return newCode;
 }
 
-SsaSymb* createSsaSymbFromSymb(symb* var);
-    SsaSymb* newSymb = new SsaSymb();
-    newSymb->type = var->type;
-    switch(var->type)
-    {
-        case SYM_VAR:
-        case SYM_ARRAY:
-        case SYM_FUNC:
-        case SYM_LABEL:
-            strcpy(newSymb->name,var->name);
-            break;
-        case SYM_TEXT:
-            strcpy(newSymb->name,var->name);
-            newSymb->label = var->label;
-            break;
-        case SYM_INT:
-            newSymb->value = var->value;
-            break;
-    }
-    return newSymb;
-}
+
 
 SsaSymb* createSsaSymbFromSsaSymb(SsaSymb* var)
 {
