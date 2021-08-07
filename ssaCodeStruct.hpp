@@ -108,7 +108,7 @@ SsaTac* createSsaTacFromTac(tac* code)
 
 SsaSymb* createSsaSymbFromSymb(symb* var);
     SsaSymb* newSymb = new SsaSymb();
-    struct newSymb->type = var->type;
+    newSymb->type = var->type;
     switch(var->type)
     {
         case SYM_VAR:
