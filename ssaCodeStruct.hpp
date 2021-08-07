@@ -2,7 +2,7 @@
 #define SSACODESTRUCT_HPP
 #include <vector>
 #include "frontEndInput.hpp"
-// #include "functionBlock.hpp"
+#include "functionBlock.hpp"
 using namespace std;
 
 static unordered_map<string,symb*> s_varList;
@@ -12,7 +12,7 @@ static unordered_map<string,symb*> s_labelList;
 struct SsaTac;
 struct SsaSymb;
 struct UseSsaTac;
-
+struct newSymb;
 struct SsaTac
 {
     int type;		
