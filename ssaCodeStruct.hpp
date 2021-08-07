@@ -12,7 +12,6 @@ static unordered_map<string,symb*> s_labelList;
 struct SsaTac;
 struct SsaSymb;
 struct UseSsaTac;
-struct newSymb;
 struct SsaTac
 {
     int type;		
