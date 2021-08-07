@@ -1,7 +1,6 @@
 #ifndef BASICBLOCK_HPP
 #define BASICBLOCK_HPP
 #include "frontEndInput.hpp"
-#include "ssaCodeStruct.hpp"
 #include <iostream>
 #include <vector>
 using namespace std;
