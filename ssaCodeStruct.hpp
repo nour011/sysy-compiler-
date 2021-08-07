@@ -12,6 +12,7 @@ static unordered_map<string,symb*> s_labelList;
 struct SsaTac;
 struct SsaSymb;
 struct UseSsaTac;
+struct newSymb;
 struct SsaTac
 {
     int type;		
@@ -60,6 +61,27 @@ struct SsaSymb
     SsaTac* defPoint;  
     UseSsaTac* useList;
     SsaSymb()
+    {
+        type = -1;
+        value = -1;
+        name = new char[50];
+        name[0] = '\0';
+        useTimes = 0;
+        defPoint = NULL;
+        useList = new UseSsaTac();
+    }
+};
+
+struct newSymb
+{
+    int type;
+    int value;
+    int label;
+    char* name;
+    int useTimes;
+    newSymb* defPoint;  
+    UseSsaTac* useList;
+    newSymb()
     {
         type = -1;
         value = -1;
